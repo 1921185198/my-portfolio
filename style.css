@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    transition: background 0.5s, color 0.5s;
 }
 
 header {
@@ -26,8 +27,32 @@ nav a {
     text-decoration: none;
 }
 
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 section {
     padding: 50px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
@@ -37,4 +62,14 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+body.dark-mode header {
+    background-color: #444;
 }
