@@ -10,7 +10,7 @@ function toggleDarkMode() {
 
 // Fetch GitHub projects dynamically
 function fetchGitHubProjects() {
-    const username = "your-github-username"; // Replace with your GitHub username
+    const username = "1921185198"; // Replace with your GitHub username
     fetch(`https://api.github.com/users/${username}/repos`)
         .then(response => response.json())
         .then(data => {
