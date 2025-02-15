@@ -17,28 +17,33 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I am Suresh Dharavath, a Data Engineer with expertise in Snowflake, Databricks, and Azure.</p>
+        <p>Hello! I am [Your Name], a Data Engineer with expertise in Snowflake, Databricks, and Azure.</p>
+        <a href="Suresh_Dharavath_Resume (1).pdf" download class="resume-btn">Download My Resume</a>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of your project.</p>
+        <h2>My Projects</h2>
+        <div id="github-projects">
+            <p>Loading projects...</p>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: dharavathsuresh1608@gmail.com</p>
+        <form action="https://formspree.io/f/{your-formspree-id}" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2025 Suresh Dharavath. All rights reserved.</p>
+        <p>© 2025 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
 </html>
